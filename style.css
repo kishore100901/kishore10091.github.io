@@ -1,0 +1,295 @@
+body{
+    margin:0px;
+    
+    font-family: "Baloo Tammudu 2";
+}
+a{
+    text-decoration: none;
+   
+}
+* {
+    scroll-behavior: smooth;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+
+    background-color: #2c2f2f;
+    
+    box-shadow: 0 0 5px 2px;
+    overflow: hidden;
+    display: block;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.4rem;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #525252;
+    
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #646464;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+
+
+  
+
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+
+
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: fixed;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      
+      right: 0;
+      top: 0;
+    }
+
+    .profile{
+        margin-top: 10vh !important;
+    }
+
+    .topnav a{
+        font-size: 3.8vw!important;
+    }
+
+    
+    
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+
+.profile{
+    margin: 15px;
+    margin-top: 0;
+    width: 30vw;
+    min-width: 320px;
+    height: auto;
+    border-radius: 50%;
+    float: right;
+    box-shadow: 0 0 10px 1px;
+    border: 10px solid #214252;
+}
+
+.profile:hover{
+    box-shadow: 0 0 5px 5px;
+}
+
+
+h1{
+    margin-top: 10%;
+    color: #ce6262;
+    margin-left: 8%;
+    
+}
+
+.short-intro{
+    
+    max-width: 600px;
+    margin-left:8%;
+    font-size: 1.5rem;
+    color: #14313f;
+    animation: text-float 1s;
+}
+
+@keyframes text-float {
+    from{margin-left: 0.1%; opacity: 0;}
+    to { margin-left: 8%; opacity: 1;}
+}
+
+#heading-center{
+    color: #214252;
+    margin-top: 70px;
+    font-size: 45px;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+
+    
+}
+
+#subheading-center{
+
+    
+    color:#59466b;
+    margin-top: 150px;
+    font-size: 45px;
+    text-align: center;
+        
+}
+
+.project-container{
+   display: flex;
+   flex: initial;
+   background-color: #505050;
+   margin-top: 1.5rem;
+   justify-content: center;
+   flex-direction: row ;
+   flex-wrap: wrap;
+
+}
+
+.flex-box{
+    flex: 500px;
+    order: 2;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+    height: auto;  
+    overflow-y: hidden;
+    background-color: #f6f5f1;
+    box-shadow: 0 0 8px 0px;
+    border-radius: 20px;
+    justify-content: space-around;
+    border: 1px solid rgb(75, 75, 75);
+}
+
+.flex-box:hover{
+    box-shadow: 0 0 12px 2px;
+
+}
+
+.flex-box h1{
+    
+    color:#ce6262;
+    margin-top: 10px;
+    margin-left: 0px;
+    text-align: center !important;
+
+}
+
+.flex-box h2{
+    color:#6276ce;
+    margin-top: 10px;
+    margin-left: 0px;
+    text-align: center !important;
+    font-size: 180%;
+}
+
+.flex-box p{
+    color: #214252;
+    text-align: center;
+    font-size:  21px;
+}
+
+
+.bg{
+    
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    box-shadow: 0 0 8px 1px black;
+    transition: 1.5s ease;
+    background-repeat: no-repeat;
+  
+
+}
+.bg:hover{
+    opacity: 1; 
+    background-position: top; 
+}
+
+.otw{
+    background-image: url("OnTheWay.png");
+    background-repeat: no-repeat;
+}
+
+.js{
+    background-image: url("JustSlide.png");
+}
+.js2{
+    background-image: url("JustSlide2.png");
+}
+.jsr{
+    background-image: url("JS-remastered.png");
+    
+}
+
+.bb{
+    background-image: url("BouncingBall.png");
+    background-position: top left;
+}
+
+.fr{
+    background-image: url("FruitReset.png");
+}
+
+.sc{
+    background-image: url("SelectiveCopier.png");
+    background-position: top left;
+}
+
+.cp{
+    background-image: url("ColorPicker.png");
+}
+
+.fd{
+    background-image: url("FaceDetector.png");
+}
+.sr{
+    background-image: url("ScreenRecorder.png");
+}
+
+.tb{
+    background-image: url("https://cdn.pixabay.com/photo/2014/05/03/00/31/home-office-336581_960_720.jpg");
+}
+
+.sb{
+    background-image: url("https://cdn.pixabay.com/photo/2018/08/15/08/48/social-3607508_960_720.jpg");
+}
+
+#contact{
+    float: right;
+}
+.fx{
+  padding: 20px;
+  font-size: 35px !important;
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  background:#2c2f2f;
+  color: white;
+}
+
+.fa:hover, .fx:hover {
+    opacity: 0.7;
+}
